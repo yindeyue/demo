@@ -1,0 +1,21 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: servercenter1
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  dashboard:
+    path: /eurekawebui
+  server: 
+    responseCacheUpdateInvervalMs: 3000
+    responseCacheAutoExpirationInSeconds: 30
+    eviction-interval-timer-in-ms: 3000
+    enable-self-preservation: false
+management:
+  security:
+    enabled: false
